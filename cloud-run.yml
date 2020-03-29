@@ -22,8 +22,8 @@ on:
 # Environment variables available to all jobs and steps in this workflow
 env:
   PROJECT_ID: ${{ secrets.RUN_PROJECT }}
-  RUN_REGION: us-central1
-  SERVICE_NAME: helloworld-nodejs
+  RUN_REGION: us-east4
+  SERVICE_NAME: personal-website
 
 jobs:
   setup-build-deploy:
