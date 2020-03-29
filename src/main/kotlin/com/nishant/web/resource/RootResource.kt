@@ -4,7 +4,6 @@ import com.codahale.metrics.annotation.Timed
 import com.google.common.collect.ImmutableMap
 import com.nishant.web.data.User
 import com.nishant.web.resource.view.HomePage
-import jdk.nashorn.internal.objects.annotations.Getter
 import org.joda.time.DateTime
 import javax.ws.rs.GET
 import javax.ws.rs.Path

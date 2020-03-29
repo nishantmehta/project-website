@@ -31,5 +31,5 @@ compileTestKotlin {
 }
 
 run {
-    args = ['server', '/Users/nishant/Downloads/personal-project-website/src/main/resources/config.yml']
+    args = ['server', 'config.yml']
 }
