@@ -4,7 +4,7 @@ RUN ls
 RUN pwd
 WORKDIR /usr/src/app
 RUN pwd
-COPY /home/runner/work/project-website/project-website/ ./
+COPY . /usr/src/app/
 RUN pwd
 RUN ls
 RUN ./gradlew :distTar
