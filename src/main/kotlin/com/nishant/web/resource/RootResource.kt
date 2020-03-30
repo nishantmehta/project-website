@@ -30,7 +30,7 @@ class RootResource(private val projectStatus: String) {
     @Produces(MediaType.TEXT_HTML)
     @Path("")
     fun homePage(): HomePage {
-        val user = User("nishant", 100)
+        val user = User("Ritika", 100)
         return HomePage(user)
     }
 }
