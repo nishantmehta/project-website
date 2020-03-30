@@ -17,6 +17,6 @@ WORKDIR /usr/src/app/project-website-0.1
 
 EXPOSE 8080
 
-CMD ./bin/project-website server config.yml
+CMD ["./bin/project-website", "server", "config.yml"]
 
 
