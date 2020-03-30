@@ -1,14 +1,14 @@
 package com.nishant.web.resource.view
 
+import com.nishant.web.data.PendingTime
 import com.nishant.web.data.User
 import io.dropwizard.views.View
 
 class HomePage : View {
-    var user: User
+    var pendingTime: PendingTime
 
-    constructor(user: User) : super("homepage.ftl") {
-        println(user.name)
-        this.user = user
+    constructor(pendingTime: PendingTime) : super("homepage.ftl") {
+        this.pendingTime = pendingTime
     }
 
 }
