@@ -8,7 +8,6 @@ import io.dropwizard.setup.Bootstrap
 import io.dropwizard.setup.Environment
 import io.dropwizard.views.ViewBundle
 
-
 class WebFrontendApplication : Application<WebFrontendConfiguration>() {
     override fun run(config: WebFrontendConfiguration, env: Environment) {
         env.jersey().register(RootResource(config.projectStatus))
@@ -21,8 +20,10 @@ class WebFrontendApplication : Application<WebFrontendConfiguration>() {
 
     companion object {
         @JvmStatic
-        fun main(args: Array<String>) {
+        public fun main(args: Array<String>) {
+
             WebFrontendApplication().run(*args)
         }
     }
+
 }
