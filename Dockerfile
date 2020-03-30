@@ -1,10 +1,9 @@
 FROM openjdk:12
 
-WORKDIR /usr/src/app
-
-COPY . ./
-
 RUN ./gradlew :distTar
+
+RUN ls
+RUN pwd
 
 RUN mv build/distributions/project-website-0.1.tar .
 
