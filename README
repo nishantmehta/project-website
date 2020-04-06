@@ -1,1 +1,10 @@
 Website for my personal projects!
+
+
+Project1: Create a Object store & share website, this website will allow the user to store small objects on their online account and share
+it with people within and outside the platform. We will build budgeting into the platform to ensure fair and billed usage.
+
+Goal of the project:
+1. To practice creating a end-to-end product
+2. Learn Kotlin and react js in the process
+3. Follow best practices in terms of CI/CD and testing
