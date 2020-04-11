@@ -18,6 +18,7 @@ import javax.ws.rs.core.Response
 class RootResource(private val projectStatus: String) {
 
     val releaseDate = DateTime(2020, 4, 30, 12, 0, 0, DateTimeZone.forTimeZone(TimeZone.getTimeZone("America/New_York")))
+    var count = 0
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Timed
@@ -26,6 +27,7 @@ class RootResource(private val projectStatus: String) {
         val entity = ImmutableMap.builder<String, String>()
             .put("project status", projectStatus)
             .put("time on server", DateTime.now().toLocalDateTime().toString())
+            .put("user on the same instance: ", "" + count++)
             .build()
         return Response.ok().entity(entity).build();
     }
