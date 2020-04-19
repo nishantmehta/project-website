@@ -1,0 +1,19 @@
+version: '3.0'
+services:
+  service:
+    build: .
+    expose:
+      - 8080
+  ui:
+    build: "frontend/"
+    expose:
+      - 3000
+  proxy:
+    build: "haproxy/"
+    ports:
+      - "80:80"
+    expose:
+      - 80
+    depends_on:
+      - ui
+      - service

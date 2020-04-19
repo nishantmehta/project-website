@@ -14,7 +14,7 @@ import javax.ws.rs.Produces
 import javax.ws.rs.core.MediaType
 import javax.ws.rs.core.Response
 
-@Path("/")
+@Path("/api/")
 class RootResource(private val projectStatus: String) {
 
     val releaseDate = DateTime(2020, 4, 30, 12, 0, 0, DateTimeZone.forTimeZone(TimeZone.getTimeZone("America/New_York")))
